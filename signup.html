@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <!-- Sign up form -->
+  <div class="sign_main">
+    <h1 class="sign_up_title">Sign up</h1>
+
+    <form role="form" onsubmit="signUp(event);" autocomplete="off" id="form">
+
+      <div class="form-control">
+            <label for="username"></label>
+            <input type="text" placeholder="User name" name="username" id="username" required>
+      </div>
+      <div class="form-control">
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-control">
+        <label for="password"></label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit" id="submit">Sign up</button>
+      <span class="msg" id="duplicate-msg"></span>
+
+    </form>
+  </div> 
+
+
+    <!-- Inside this JavaScript file I've inserted the forms functions-->
+  <script src="js/forms.js"></script>
+
+</body>
+</html>
